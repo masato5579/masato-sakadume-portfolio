@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Masato Sakadumeのポートフォリオサイト。Vue.jsやReactを中心に、PHPやLaravelを扱うフルスタックWebエンジニアです。">
+  <meta name="author" content="Masato Sakadume">
+  <title>Masato Sakadume - Frontend Engineer</title>
+</head>
+<body>
+  <main>
+    <section class="profile-card">
+      <header>
+        <div class="header-top">
+          <div class="social-icons">
+            <a href="https://github.com/masato5579" target="_blank" aria-label="GitHub">
+              <img src="/src/assets/icons/github-mark.svg" alt="GitHub">
+            </a>
+            <a href="#" aria-label="Zenn">
+              <img src="/src/assets/icons/zenn-logo.svg" alt="Zenn">
+            </a>
+          </div>
+        </div>
+        <img src="/src/assets/profileicon.webp" alt="Masato Sakadumeのプロフィール画像" class="profile-image">
+        <h1>Masato Sakadume</h1>
+        <p class="subtitle">Frontend Engineer</p>
+      </header>
+      <div class="skills-section">
+        <div class="skills">
+          <a class="skill-item" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" aria-label="JavaScript">
+            <img src="/src/assets/icons/javascript-icon.svg" alt="JavaScript">
+            <span>JavaScript</span>
+          </a>
+          <a class="skill-item" href="https://www.typescriptlang.org/" target="_blank" aria-label="TypeScript">
+            <img src="/src/assets/icons/typescript-icon.svg" alt="TypeScript">
+            <span>TypeScript</span>
+          </a>
+          <a class="skill-item" href="https://vuejs.org/" target="_blank" aria-label="Vue.js">
+            <img src="/src/assets/icons/vue-icon.svg" alt="Vue.js">
+            <span>Vue.js</span>
+          </a>
+          <a class="skill-item" href="https://react.dev/" target="_blank" aria-label="React">
+            <img src="/src/assets/icons/react-icon.svg" alt="React">
+            <span>React</span>
+          </a>
+          <a class="skill-item" href="https://astro.build/" target="_blank" aria-label="Astro">
+            <img src="/src/assets/icons/astro-icon.svg" alt="Astro">
+            <span>Astro</span>
+          </a>
+          <a class="skill-item" href="https://www.php.net/" target="_blank" aria-label="PHP">
+            <img src="/src/assets/icons/php-icon.svg" alt="PHP">
+            <span>PHP</span>
+          </a>
+          <a class="skill-item" href="https://laravel.com/" target="_blank" aria-label="Laravel">
+            <img src="/src/assets/icons/laravel-icon.svg" alt="Laravel">
+            <span>Laravel</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden; /* スクロールを無効化 */
+  }
+
+  main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10vh; /* 上の余白を1/2ほど減らすためにマイナスのマージンを追加 */
+  }
+
+  .profile-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    text-align: center;
+    max-width: 320px;
+    width: 100%;
+  }
+
+  .profile-image {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin: 8px 0;
+  }
+
+  .description {
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.5;
+    margin: 16px 0;
+  }
+
+  .blog-note {
+    font-size: 0.9rem;
+    color: #007acc;
+    margin-bottom: 16px;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 16px;
+    justify-content: center;
+    margin: 16px 0;
+  }
+
+  .skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .skills img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .header-top {
+    display: flex;
+    justify-content: flex-end; /* 右寄せに変更 */
+    align-items: center;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+
+  .username {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 8px;
+  }
+
+  .social-icons img {
+    width: 24px;
+    height: 24px;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+</style>
+</html>
