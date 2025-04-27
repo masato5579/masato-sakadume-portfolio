@@ -1,3 +1,17 @@
+---
+import Image from 'astro/components/Image.astro';
+import profileIcon from '../assets/profileicon.webp';
+import githubMark from '../assets/icons/github-mark.svg';
+import zennLogo from '../assets/icons/zenn-logo.svg';
+import javascriptIcon from '../assets/icons/javascript-icon.svg';
+import typescriptIcon from '../assets/icons/typescript-icon.svg';
+import vueIcon from '../assets/icons/vue-icon.svg';
+import reactIcon from '../assets/icons/react-icon.svg';
+import astroIcon from '../assets/icons/astro-icon.svg';
+import phpIcon from '../assets/icons/php-icon.svg';
+import laravelIcon from '../assets/icons/laravel-icon.svg';
+---
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -14,45 +28,45 @@
         <div class="header-top">
           <div class="social-icons">
             <a href="https://github.com/masato5579" target="_blank" aria-label="GitHub">
-              <img src="/src/assets/icons/github-mark.svg" alt="GitHub">
+              <Image src={githubMark} alt="GitHub" />
             </a>
             <a href="#" aria-label="Zenn">
-              <img src="/src/assets/icons/zenn-logo.svg" alt="Zenn">
+              <Image src={zennLogo} alt="Zenn" />
             </a>
           </div>
         </div>
-        <img src="/src/assets/profileicon.webp" alt="Masato Sakadumeのプロフィール画像" class="profile-image">
+        <Image src={profileIcon} alt="Masato Sakadumeのプロフィール画像" class="profile-image" />
         <h1>Masato Sakadume</h1>
         <p class="subtitle">Frontend Engineer</p>
       </header>
       <div class="skills-section">
         <div class="skills">
           <a class="skill-item" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" aria-label="JavaScript">
-            <img src="/src/assets/icons/javascript-icon.svg" alt="JavaScript">
+            <Image src={javascriptIcon} alt="JavaScript" />
             <span>JavaScript</span>
           </a>
           <a class="skill-item" href="https://www.typescriptlang.org/" target="_blank" aria-label="TypeScript">
-            <img src="/src/assets/icons/typescript-icon.svg" alt="TypeScript">
+            <Image src={typescriptIcon} alt="TypeScript" />
             <span>TypeScript</span>
           </a>
           <a class="skill-item" href="https://vuejs.org/" target="_blank" aria-label="Vue.js">
-            <img src="/src/assets/icons/vue-icon.svg" alt="Vue.js">
+            <Image src={vueIcon} alt="Vue.js" />
             <span>Vue.js</span>
           </a>
           <a class="skill-item" href="https://react.dev/" target="_blank" aria-label="React">
-            <img src="/src/assets/icons/react-icon.svg" alt="React">
+            <Image src={reactIcon} alt="React" />
             <span>React</span>
           </a>
           <a class="skill-item" href="https://astro.build/" target="_blank" aria-label="Astro">
-            <img src="/src/assets/icons/astro-icon.svg" alt="Astro">
+            <Image src={astroIcon} alt="Astro" />
             <span>Astro</span>
           </a>
           <a class="skill-item" href="https://www.php.net/" target="_blank" aria-label="PHP">
-            <img src="/src/assets/icons/php-icon.svg" alt="PHP">
+            <Image src={phpIcon} alt="PHP" />
             <span>PHP</span>
           </a>
           <a class="skill-item" href="https://laravel.com/" target="_blank" aria-label="Laravel">
-            <img src="/src/assets/icons/laravel-icon.svg" alt="Laravel">
+            <Image src={laravelIcon} alt="Laravel" />
             <span>Laravel</span>
           </a>
         </div>
